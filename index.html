@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Crash Network is Asia's #1 Minecraft Server offering a variety of game modes like Lifesteal, FFa, and more. Join our community now!">
+    <meta name="keywords" content="Minecraft, Server, Lifesteal, FFa, Java Edition, Bedrock, Crash Network, Asia Minecraft">
     <title>Crash Network | Minecraft Server</title>
     <!-- Favicon -->
-    <link rel="icon" href="https://cdn.discordapp.com/icons/1297449347457224734/20333fa8b7b2f3fe991c50884752ef99.webp?size=2048" type="image/webp"> <!-- Using Discord icon as favicon -->
-    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file (optional) -->
+    <link rel="icon" href="https://cdn.discordapp.com/icons/1297449347457224734/20333fa8b7b2f3fe991c50884752ef99.webp?size=2048" type="image/webp">
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000001; /* Background color for body */
-            color: white; /* Text color set to white */
+            background-color: #000001;
+            color: white;
             position: relative;
         }
         header {
-            background-color: #000001; /* Background color for header */
+            background-color: #000001;
             color: white;
             text-align: center;
             padding: 2rem;
@@ -31,8 +33,8 @@
         }
         .banner {
             width: 100%;
-            height: 250px; /* Set height as needed */
-            background-image: url('https://cdn.discordapp.com/banners/1297449347457224734/9d1bdde77e8dbe106525dc396fe8b881.webp?size=2048'); /* Banner URL */
+            height: 250px;
+            background-image: url('https://cdn.discordapp.com/banners/1297449347457224734/9d1bdde77e8dbe106525dc396fe8b881.webp?size=2048');
             background-size: cover;
             background-position: center;
             margin-bottom: 2rem;
@@ -55,7 +57,7 @@
             text-align: center;
         }
         .feature h3, .mode h3 {
-            color: #333; /* You can change this to white if you want to match the rest */
+            color: #333;
         }
         footer {
             background-color: #111;
@@ -77,8 +79,20 @@
             position: absolute;
             top: 20px;
             right: 20px;
-            width: 40px; /* Set size of the icon */
-            height: 40px; /* Set size of the icon */
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .features, .game-modes {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            .features, .game-modes {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -90,7 +104,7 @@
     </a>
 
     <!-- Banner -->
-    <div class="banner"></div> <!-- Banner Image -->
+    <div class="banner" alt="Crash Network Minecraft Banner"></div>
 
     <!-- Header -->
     <header>
@@ -119,6 +133,44 @@
             <li><strong>WebStore:</strong> <a href="https://store.crashnet.fun" target="_blank">Visit our Store!</a></li>
             <li><strong>Discord:</strong> <a href="https://discord.gg/cp7992rvEv" target="_blank">Join our Discord!</a></li>
         </ul>
+
+        <!-- New Features Section -->
+        <div class="features">
+            <div class="feature">
+                <h3>Custom Plugins</h3>
+                <p>Enjoy unique gameplay with our custom-built plugins for a more immersive experience!</p>
+            </div>
+            <div class="feature">
+                <h3>24/7 Uptime</h3>
+                <p>Our server runs non-stop, so you can play whenever you want without interruptions.</p>
+            </div>
+            <div class="feature">
+                <h3>Active Community</h3>
+                <p>Join a large and active community of players, with daily events and friendly staff!</p>
+            </div>
+        </div>
+
+        <!-- Lifesteal and FFa Game Modes Section -->
+        <div class="game-modes">
+            <div class="mode">
+                <h3>Lifesteal Mode</h3>
+                <p>In Lifesteal, every time you kill another player, you steal their health! Can you survive and become the most powerful player?</p>
+                <ul>
+                    <li>Steal hearts from your enemies when you kill them.</li>
+                    <li>Build your power by eliminating rivals in a PvP environment.</li>
+                    <li>Custom Lifesteal mechanics to enhance the thrill of PvP combat.</li>
+                </ul>
+            </div>
+            <div class="mode">
+                <h3>Free for All (FFA)</h3>
+                <p>FFA mode lets players battle it out in a chaotic, no-holds-barred combat scenario. Everyone is your enemy!</p>
+                <ul>
+                    <li>Fight other players in a pure PvP environment.</li>
+                    <li>No alliances—it's every player for themselves!</li>
+                    <li>Win the FFA arena by defeating all other players and claiming victory.</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
